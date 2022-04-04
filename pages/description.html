@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product View Pge</title>
+  <link rel="stylesheet" href="description.css">
+</head>
+
+<body>
+  <div id="container">
+
+  </div>
+  <div class="card-wrapper">
+    <div class="card">
+      <!-- card left -->
+      <div class="product-imgs">
+
+        <div class="img-select">
+          <div class="img-item">
+            <a href="#" data-id="1">
+              <img src="https://i.ebayimg.com/thumbs/images/g/-38AAOSwNfBg~vgG/s-l225.jpg" alt="">
+            </a>
+          </div>
+          <div class="img-item">
+            <a href="#" data-id="2">
+              <img src="https://i.ebayimg.com/thumbs/images/g/3U4AAOSwRIVhO54Z/s-l225.jpg" alt="shoe image"
+                class="smallimg">
+            </a>
+          </div>
+          <div class="img-item">
+            <a href="#" data-id="3">
+              <img src="https://i.ebayimg.com/thumbs/images/g/K~QAAOSwaH9hAzeA/s-l225.jpg" alt="shoe image"
+                class="smallimg">
+            </a>
+          </div>
+          <div class="img-item">
+            <a href="#" data-id="4">
+              <img src="https://i.ebayimg.com/thumbs/images/g/AcgAAOSwLrJhO1-V/s-l225.jpg" alt="shoe image"
+                class="smallimg">
+            </a>
+          </div>
+        </div>
+
+        <div class="img-display">
+          <div class="img-showcase" id="img-showcase">
+
+          </div>
+        </div>
+
+      </div>
+      <!-- card right -->
+      <div class="product-content">
+        <h2 id="prTitle">Dell Laptop</h2>
+        <p class="review">10,987 Ratings & 178 Review</p>
+        <div class="product-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <div class="rat">
+            <p>4.7 </p>
+            <img src="./shoes_images/star.png" id="starimg" alt="">
+          </div>
+        </div>
+
+        <div class="product-price">
+          <p class="new-price"> <span>₹249.00</span></p>
+          <p class="last-price"><span>₹257.00</span></p>
+          <h4 class="off">43% off</h4>
+
+        </div>
+
+        <div class="product-detail">
+          <h2>Available offers: </h2>
+          <ul id="prdetails">
+
+          </ul>
+        </div>
+
+        <div class="purchase-info">
+          <input type="number" min="0" value="1">
+          <button type="button" class="btn">
+            Add to Cart <i class="fas fa-shopping-cart"></i>
+          </button>
+          <button type="button" class="btn">Compare</button>
+        </div>
+
+        <div class="social-links">
+          <p>Share At: </p>
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-pinterest"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+<script>
+
+  var x = JSON.parse(localStorage.getItem("viewData")) || [];
+  // console.log(x[0].title)
+  display(x)
+
+  function display(x) {
+    x.forEach((e) => {
+      let t = document.getElementById('prTitle');
+      t.innerText = e.title
+
+
+      let ul = document.getElementById('prdetails')
+      let reviews = document.createElement("li")
+      reviews.innerText = "Bank OfferFlat ₹50 Instant Cashback on Paytm Wallet. Min Order Value ₹500. Valid once per Paytm accountT&C";
+
+      let condition = document.createElement("li")
+      condition.innerText = "Bank Offer5% Cashback on Flipkart Axis Bank CardT&C";
+
+      let shipping = document.createElement("li")
+      shipping.innerText = e.shipping;
+
+      let subtitle = document.createElement("li")
+      subtitle.innerText = e.subtitle;
+
+      let returns = document.createElement("li")
+      returns.innerText = e.returns;
+
+      ul.append(reviews, condition, shipping, subtitle, returns)
+      console.log(t)
+
+      let imgdiv = document.getElementById('img-showcase')
+
+      let img = document.createElement('img')
+      img.src = e.thumbnail
+      imgdiv.append(img)
+
+
+    })
+  }
+</script>
