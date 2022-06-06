@@ -61,9 +61,9 @@ Flipkart was founded in October 2007 by Sachin Bansal and Binny Bansal, alumni o
     <ul>
         <li><a href="https://github.com/Nameh-Dhiman">@Nameh Dheeman</a></li>
         <li><a href="https://github.com/SonaliBhalerao">@Sonali Bhalerao</a></li>
-        <li> <a href="https://github.com/009shivani">@Shivani Banduni</a> </li>
-        <li><a href="https://github.com/prabhatMishra">@Ankur Sharma</a></li>
-        <li><a href="https://github.com/ParimaBiswas">@Atanu Mondal</a></li>
+        <li> <a href="https://github.com/VishalPawar">@Vishal Pawar</a> </li>
+        <li><a href="https://github.com/prabhatMishra">@prabhat Mishra</a></li>
+        <li><a href="https://github.com/ParimaBiswas">@Parimal Biswas</a></li>
     </ul>
        <h1>Contributing</h1>
     <ul>
