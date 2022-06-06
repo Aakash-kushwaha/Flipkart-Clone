@@ -20,8 +20,6 @@ Flipkart was founded in October 2007 by Sachin Bansal and Binny Bansal, alumni o
     <img src="http://offerheoffer.com/wp-content/uploads/2016/07/werf-compressor.png?x58497" />
       <h2>Payment page</h2>
     <img src="https://cdn.flipshope.com/blog/wp-content/uploads/2016/09/Flipkart-payment-options.png" />
-       <h2>Payment Successful</h2>
-    <img src="https://www.customercarephonenumber.in/blog/how-to-placed-order-from-flipkart-com/" />
     <h1>[Getting Started]</h1>
     <h3>Execution</h3>
     <p>If you want to run our project in your local machine</p>
